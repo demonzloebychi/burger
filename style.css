@@ -1,0 +1,61 @@
+.burger{
+    display: none;
+
+}                 
+.burger span{
+
+}                            
+.burger__text{
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 400;
+    font-family: "Geometria", serif;
+}
+@media (max-width:768px){
+    .burger{
+        display: block;
+        width: 37px;
+        height: 42px;
+        z-index: 3;
+        position: relative;
+    } 
+    .menu__burger.active:before{
+        transform: rotate(45deg);
+        top: 8px;
+    }
+    .menu__burger.active::after{
+        transform: rotate(-45deg);
+        bottom: 8px;
+    }
+    .menu__burger.active span{
+        transform: scale(0);
+        color: #828282;
+    }
+    .menu__burger span{
+        position: absolute;
+        background-color: #000;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        top: 8px;
+        transition: all 0.3s ease 0s;
+    }
+    .menu__burger::before,
+    .menu__burger::after{
+        content: " ";
+        position: absolute;
+        width: 100%;
+        background-color: #000;
+        height: 4px;
+        left: 0;
+        transition: all 0.3s ease 0s;
+    }
+    .menu__burger::before{
+        top: 0;
+    }
+    .menu__burger::after{
+        bottom: 0;
+    }
+
+
+}
