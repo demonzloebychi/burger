@@ -21,8 +21,8 @@
     .burger__text{
         position: absolute;
         color: #fff;
-        bottom: 5px;
-        right: 50%;
+        bottom: 1px;
+        right: 15%;
     }
     
     .burger.active:before{
