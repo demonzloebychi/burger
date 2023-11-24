@@ -38,6 +38,7 @@
         height: 4px;
         top: 8px;
         transition: all 0.3s ease 0s;
+        z-index: 5;
     }
     .menu__burger::before,
     .menu__burger::after{
@@ -48,6 +49,7 @@
         height: 4px;
         left: 0;
         transition: all 0.3s ease 0s;
+        z-index: 5;
     }
     .menu__burger::before{
         top: 0;
