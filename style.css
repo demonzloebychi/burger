@@ -18,19 +18,19 @@
         z-index: 3;
         position: relative;
     } 
-    .menu__burger.active:before{
+    .burger.active:before{
         transform: rotate(45deg);
         top: 8px;
     }
-    .menu__burger.active::after{
+    .burger.active::after{
         transform: rotate(-45deg);
         bottom: 8px;
     }
-    .menu__burger.active span{
+    .burger.active span{
         transform: scale(0);
         color: #828282;
     }
-    .menu__burger span{
+    .burger span{
         position: absolute;
         background-color: #000;
         left: 0;
@@ -40,8 +40,8 @@
         transition: all 0.3s ease 0s;
         z-index: 5;
     }
-    .menu__burger::before,
-    .menu__burger::after{
+    .burger::before,
+    .burger::after{
         content: " ";
         position: absolute;
         width: 100%;
@@ -51,10 +51,10 @@
         transition: all 0.3s ease 0s;
         z-index: 5;
     }
-    .menu__burger::before{
+    .burger::before{
         top: 0;
     }
-    .menu__burger::after{
+    .burger::after{
         bottom: 0;
     }
 
